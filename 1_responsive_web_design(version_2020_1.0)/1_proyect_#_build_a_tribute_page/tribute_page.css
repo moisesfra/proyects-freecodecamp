@@ -6,6 +6,29 @@ html {
   font-size: 10px;
 }
 
+.menu{
+	list-style: none;
+	width: 100%;
+	background: #000;
+	margin: 0;
+	padding: 0;
+}
+
+.menu li{
+	display: inline-block;
+}
+
+.menu li a {
+	padding: 10px 20px;
+	display: inline-block;
+	color: #FFF;
+}
+
+.menu li a:hover {
+	background: #CCC;
+	color: #000;
+}
+
 body {
 	background: #938F88; 
 
@@ -28,28 +51,32 @@ h3{
 }
 p{
 	font-family: Arial, Helvetica, sans-serif, "monospace";
-	font-size: 1.2em;
+	font-size: 1.3em;
 	color: #080808;
 	background: #FFFF00;
-	max-width: 750px;
-  	margin: 0 auto 50px auto;
+	max-width: 75em;
+  	margin: auto;
  	text-align: left;
   	line-height: 1.6;
 }
   ol li a {
 	color: #3BFFFF;
-	height: 3.2em;
-	width: 1.68em;
+	height: auto;
+	width: auto;
 }
 
 div {
 	text-align: center;	
+	float: center;
+	background: #92C5FC;
 }
 img {  
-	text-align: center;
-	float: center;
-	width: 40em;
+	width: 35%;
 	height: auto;
+	margin: auto;
+	display: block;
+	border-radius: 1em;
+ 
 }
 
 label {
@@ -61,4 +88,19 @@ select {
 	height: auto;
 	width: 30.0em;
 
+}
+ul {
+	font-family: Arial, Helvetica, sans-serif, "monospace";
+	list-style-type: square;
+	font-size: 1em;
+}
+
+li {
+	font-family: Arial, Helvetica, sans-serif, "monospace";
+	font-size: 1.5em;
+}
+
+a {
+	font-family: Arial, Helvetica, sans-serif, "monospace";
+	font-size: 1.3em;
 }
