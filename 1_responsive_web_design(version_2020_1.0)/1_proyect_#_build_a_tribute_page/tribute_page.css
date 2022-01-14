@@ -6,6 +6,10 @@ html {
   font-size: 10px;
 }
 
+nav ul li a{
+	font-family: Arial, Helvetica, sans-serif, "monospace";
+	font-size: 1.5em;
+}
 .menu{
 	list-style: none;
 	width: 100%;
@@ -13,25 +17,76 @@ html {
 	margin: 0;
 	padding: 0;
 }
-
 .menu li{
 	display: inline-block;
 }
-
 .menu li a {
-	padding: 10px 20px;
+	padding: 1em 2em;
 	display: inline-block;
 	color: #FFF;
 }
-
 .menu li a:hover {
 	background: #CCC;
 	color: #000;
 }
 
+nav li a{
+	font-family: Arial, Helvetica, sans-serif, "monospace";
+	font-size: 1.5em;
+}
+.verde {
+	list-style: none;	
+	width: 18%;
+	background: #000;
+	text-align: center;
+	display: block;	
+	text-align: center;
+	margin: auto;
+}
+.verde li{
+	display: inline-block;
+}
+.verde li a{
+	padding: 1em 1em;
+	display: inline-block;
+	color: #FFF;
+}
+.verde li a:hover {
+	background: #CCC;
+	color: #000;
+}
+
+
+
+.texto2 {
+	font-family: Arial, Helvetica, sans-serif, "monospace";
+	font-size: 1.3em;
+	color: #080808;
+	background: green;
+
+  	margin: auto;
+ 	text-align: left;
+  	line-height: 1.6;
+}
+.footer_bonito {
+	font-family: Arial, Helvetica, sans-serif, "monospace";	
+	display: block;
+	font-size: 1.4em;
+	text-align: center;
+	margin: auto;
+	background: #ED1C24;
+	width: 40%;
+  	line-height: 1.6;
+
+}
+
 body {
 	background: #938F88; 
 
+}
+header {
+	width: 100%;
+	margin: auto;
 }
 h1{
 	font-family: Arial, Helvetica, sans-serif, "monospace";
@@ -43,26 +98,17 @@ h1{
 }
 h2{
 	font-size: 2.25em;
-	color: green;
+	color: #891C00;
 }
 h3{
 	font-size: 2.0em;
 	color: darkblue;
 }
-p{
-	font-family: Arial, Helvetica, sans-serif, "monospace";
-	font-size: 1.3em;
-	color: #080808;
-	background: #FFFF00;
-	max-width: 75em;
-  	margin: auto;
- 	text-align: left;
-  	line-height: 1.6;
-}
-  ol li a {
+
+aside li a{
 	color: #3BFFFF;
-	height: auto;
-	width: auto;
+	text-align: left;
+
 }
 
 div {
@@ -92,15 +138,14 @@ select {
 ul {
 	font-family: Arial, Helvetica, sans-serif, "monospace";
 	list-style-type: square;
-	font-size: 1em;
-}
-
-li {
-	font-family: Arial, Helvetica, sans-serif, "monospace";
-	font-size: 1.5em;
+	font-size: 1.2em;
+	display: block;
+	text-align: center;
+	float: center;
 }
 
 a {
 	font-family: Arial, Helvetica, sans-serif, "monospace";
 	font-size: 1.3em;
 }
+
