@@ -1,19 +1,37 @@
 /* jajaj mi primer comentario en CCS :V */
+:root {
+	--fondo-claro: #938f88;
+	--fondo-oscuro: ;
 
+	--color-footer-background: #ED1C24;
+	--color-letra-aside_li_a: #010203;
+
+  --background: #00BFFF;
+  --background-menu: #000000;
+  --background-menu-letras: #FFFFFF;
+  --background-menu-font: #F94D00;
+  --backgroud-div-font: #92C5FC;
+  --background-texto_2: #CD8032;
+
+	--fuente-primaria: Arial, "Helvetica";
+	--fuente-secundaria: sans-serif, "monospace";
+}
 html {
    /* Setting a base font size of 10px give us easier rem calculations
      Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth */
   font-size: 10px;
 }
-
-nav ul li a{
-	font-family: Arial, Helvetica, sans-serif, "monospace";
-	font-size: 1.5em;
+#main {
+  margin: 30px 8px;
+  padding: 15px;
+  border-radius: 5px;
+  background: var(--background);
 }
+
 .menu{
 	list-style: none;
 	width: 100%;
-	background: #000;
+	background: var(--background-menu);
 	margin: 0;
 	padding: 0;
 }
@@ -23,25 +41,21 @@ nav ul li a{
 .menu li a {
 	padding: 1em 2em;
 	display: inline-block;
-	color: #FFF;
+	color: var(--background-menu-letras);
 }
 .menu li a:hover {
-	background: #CCC;
+	background: var(--background-menu-font);
 	color: #000;
-}
-
-nav li a{
-	font-family: Arial, Helvetica, sans-serif, "monospace";
-	font-size: 1.5em;
 }
 .verde {
 	list-style: none;	
 	width: 18%;
-	background: #000;
+	background: var(--background-menu);
 	text-align: center;
 	display: block;	
 	text-align: center;
 	margin: auto;
+	border-radius: 0.5em;
 }
 .verde li{
 	display: inline-block;
@@ -55,18 +69,16 @@ nav li a{
 	background: #CCC;
 	color: #000;
 }
-
-
-
 .texto2 {
 	font-family: Arial, Helvetica, sans-serif, "monospace";
 	font-size: 1.3em;
 	color: #080808;
-	background: green;
-
-  	margin: auto;
+	background: var(--background-texto_2);
+  margin: auto;
  	text-align: left;
-  	line-height: 1.6;
+  line-height: 1.6;
+  border-radius: 0.25em;
+  width: 95vw;
 }
 .footer_bonito {
 	font-family: Arial, Helvetica, sans-serif, "monospace";	
@@ -74,22 +86,37 @@ nav li a{
 	font-size: 1.4em;
 	text-align: center;
 	margin: auto;
-	background: #ED1C24;
+	background: var(--color-footer-background);
 	width: 40%;
-  	line-height: 1.6;
-
+  line-height: 1.6;
+  border-radius: 0.40em;
 }
 
+nav li a{
+	font-family: Arial, Helvetica, sans-serif, "monospace";
+	font-size: 1.5em;
+}
+main h1 {
+	  border-radius: 5px;
+}
+nav ul {
+	border-radius: 5px;
+}
+nav ul li a{
+	font-family: Arial, Helvetica, sans-serif, "monospace";
+	font-size: 1.5em;
+}
 body {
-	background: #938F88; 
-
+	background: var(--fondo-claro);
+	text-align: center; 
+	list-style: none;	
 }
 header {
 	width: 100%;
 	margin: auto;
 }
 h1{
-	font-family: Arial, Helvetica, sans-serif, "monospace";
+	font-family: var(--fuente-primaria);
 	font-size: 2.5em;
 	color: orange;	
 	text-align: center;
@@ -99,41 +126,38 @@ h1{
 h2{
 	font-size: 2.25em;
 	color: #891C00;
+	text-align: center;
 }
 h3{
 	font-size: 2.0em;
 	color: darkblue;
+	text-align: center;
 }
-
 aside li a{
-	color: #3BFFFF;
-	text-align: left;
-
+	color: var(--color-letra-aside_li_a);
+	text-align: center;
+	list-style: none;	
 }
-
 div {
 	text-align: center;	
 	float: center;
-	background: #92C5FC;
+	background: var(--backgroud-div-font);
+	border-radius: 0.5em;
 }
 img {  
-	width: 35%;
+	max-width: 100%;
 	height: auto;
 	margin: auto;
 	display: block;
 	border-radius: 1em;
- 
 }
-
 label {
 	height: 30.0em;
 	width: 30.0em;
-
 }
 select {
 	height: auto;
 	width: 30.0em;
-
 }
 ul {
 	font-family: Arial, Helvetica, sans-serif, "monospace";
@@ -143,9 +167,7 @@ ul {
 	text-align: center;
 	float: center;
 }
-
 a {
 	font-family: Arial, Helvetica, sans-serif, "monospace";
 	font-size: 1.3em;
 }
-
