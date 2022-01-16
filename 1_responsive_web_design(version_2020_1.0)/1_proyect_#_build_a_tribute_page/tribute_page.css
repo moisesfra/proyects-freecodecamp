@@ -28,6 +28,15 @@ html {
   background: var(--background);
 }
 
+#img-div {
+  background: var(--backgroud-div-font);
+  padding: 10px;
+  margin: 0;
+  text-align: center;	
+	float: center;
+	border-radius: 0.5em;
+}
+
 .menu{
 	list-style: none;
 	width: 100%;
@@ -91,7 +100,10 @@ html {
   line-height: 1.6;
   border-radius: 0.40em;
 }
-
+.img-caption p:first-child {
+		font-size: 1.2em;
+		font-family: var(--fuente-primaria);
+}
 nav li a{
 	font-family: Arial, Helvetica, sans-serif, "monospace";
 	font-size: 1.5em;
@@ -138,16 +150,10 @@ aside li a{
 	text-align: center;
 	list-style: none;	
 }
-div {
-	text-align: center;	
-	float: center;
-	background: var(--backgroud-div-font);
-	border-radius: 0.5em;
-}
 img {  
 	max-width: 100%;
 	height: auto;
-	margin: auto;
+	margin: 0 auto;
 	display: block;
 	border-radius: 1em;
 }
