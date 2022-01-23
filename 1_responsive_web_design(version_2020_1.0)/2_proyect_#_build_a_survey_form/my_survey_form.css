@@ -1,3 +1,150 @@
-.hola {
-    
+/* ARREGLAR EL DESASTRE MIO DE CODIGO DE ABAJO (Poner de acuerdo los elementos Body con el ::after y el ::before)*/
+:root {
+	--color-white: #f3f3f3;
+	--color-darkblue: #1b1b32;
+	--color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+	--color-green: #37af65;
+  }
+  
+  *,
+  *::before,
+  *::after {
+	box-sizing: border-box;
+  }
+  
+  body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.4;
+	color: #000;
+	margin: 0;
+	background: #E9ECF4;
+  }
+  
+  /* mobile friendly alternative to using background-attachment: fixed */
+  body::before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	background: var(--color-darkblue);
+	background-image: linear-gradient(
+		115deg,
+		rgba(89, 207, 162, 0.356),
+		rgba(62, 204, 138, 0.253)
+	  ),
+	  url(https://c4.wallpaperflare.com/wallpaper/335/217/137/waterfalls-angel-falls-earth-forest-wallpaper-preview.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+  }
+* {
+	margin: 0;
+	padding: 0;
+}
+/* ARREGLAR EL DESASTRE MIO DE CODIGO DE ARRIBA (Poner de acuerdo los elementos Body con el ::after y el ::before)*/
+
+.h1_hdp {
+	display: flex;
+	justify-content: center;
+	font-family: 'Poppins', sans-serif, cursive;
+	font-size: 13px;
+}
+.texto_descriptivo {
+	font-size: 20px;
+	text-align: justify;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+	display: grid;
+	gap: 20px;
+
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, auto);
+
+	grid-template-areas: "header 		header			 header"
+						 "contenido 	contenido		 sidebar"
+						 "footer 		footer	 		footer"; 
+}
+
+.contenedor > div, 
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidebar, 
+.contenedor .footer {
+	background: rgba(223, 218, 204, 0.836);
+	padding: 20px;
+	border-radius: 4px;
+}
+
+.contenedor .header {
+	background: #12203e;
+	color: #fff;
+	grid-area: header;
+	text-align: center;
+}
+
+.contenedor .contenido {
+	grid-area: contenido;
+}
+
+.contenedor .sidebar {
+	grid-column: 3 / 4;
+	background: rgba(180, 203, 204, 0.884);
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	grid-area: sidebar;
+	min-height: 100px;
+
+}
+
+
+.contenedor .footer {
+	background: rgba(0, 4, 224, 0.733);
+	color: #fff;
+	grid-area: footer;
+	text-align: center;
+}
+
+.img-div {
+	top: 0px;
+	left: 0px;
+	display: block;
+	height: 100%;
+}
+.centrar {
+	max-width: 100%;
+	border-radius: 3px;
+}
+
+
+@media screen and (max-width: 768px) {
+	.contenedor {
+		grid-template-areas: "header 		header	 	 header"
+						     "contenido 	contenido	 contenido"
+							 "sidebar		sidebar		 sidebar"
+	     	                 "footer 		footer	 	 footer"; 
+	}
+}
+@media screen and (max-width: 768px) {
+	
+	.img-div {
+		display: block;
+		height: auto;
+		width: auto;
+	}
+	.centrar {
+		grid-row-start: 1;
+		max-width: 100%;
+		border-radius: 3px;
+	}
 }

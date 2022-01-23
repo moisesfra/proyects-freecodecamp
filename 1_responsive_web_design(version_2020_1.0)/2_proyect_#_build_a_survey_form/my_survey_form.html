@@ -1,31 +1,203 @@
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Mi 1er formulario de encuestas</title>
-		<link rel="stylesheet" type="text/css" href="my_survey_form.css">
-	</head>
-
-<div class="contenedor">
-   <header class="header">
-	   <h1 id="title" class="texto-centrado">Mi 1er formulario de encuestas</h1>
-	   <p id="description" class="descripcion-texto-centrado">Gracias por usar y llenar mi 1er formulario</p>		
-   </header>
-   <form id="survey-form">
-   	<div></div>
-	<div></div>
-	<div></div>
-	<div></div>
-	<div></div>
-	<div></div>
-	<div></div>
-	<div></div>
-	<div> </div>
-
-
-   	
-   </form>
-		
-</div>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+	<title>Mi 1er formulario de encuestas</title>
+	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" type="text/css" href="my_survey_form.css">
+</head>
+<body>
+	<div class="contenedor">
+		<header class="header">
+			<h1 id="title" class="texto-centrado">Mi 1er formulario de encuestas</h1>
+			<p id="description" class="descripcion-texto-centrado">Gracias por usar y llenar mi 1er formulario</p>		
+		</header>
+		<main class="contenido">
+			<div class="h1_hdp"><h1><i>Mi 1er formulario</i></h1></div>
+			<form id="survey-form">
+			 <div class="form-group">
+				<label id="name-label" for="name"><b>Nombre</b></label>
+				<input
+				  type="text"
+				  name="name"
+				  id="name"
+				  class="form-control"
+				  placeholder="Coloca tu Nombre"
+				  required
+				/>
+			 </div>
+			 <div class="form-group">
+				 <label id="email-label" for="name"><b>Email</b></label>
+				 <input
+				   type="email"
+				   name="email"
+				   id="email"
+				   class="form-control"
+				   placeholder="Coloca tu Correo"
+				   required
+				 />
+			 </div>
+			 <div class="form-group">
+				 <label id="number-label" for="number"><b>Edad</b></label>
+				 <input
+				 	type="number"
+					name="number"
+					id="number"
+					class="form-control"
+					min="1"
+					max="100"
+					step="1"
+					placeholder="Edad"
+					required
+				 />
+			 </div>
+			 <div class="form-group">
+				 <p><b>Su situación actual</b></p>
+				 <select id="dropdown" name="situacion_actual" required>
+					<option disabled selected value>Situacion Actual</option>
+					<option value="Ingeriero">Ingeniero</option>
+					<option value="Científico">Científico</option>
+					<option value="Aprendiz">Aprendiz</option>
+					<option value="No_se">No se</option>
+					<option value="Lo_que_Diosito_quiera">Lo que Diosito quiera</option>
+				 </select>
+			 </div>
+			 <div class="form-group">
+				<p><b>¿Recomendarías a un Amigo a visitar Venezuela?</b></p>
+					<label
+					><input
+			 	    checked
+			 		 name="user-recommend"
+			 		 value="no"
+			 		 type="radio"
+			 	 	 class="input-radio"
+			  		 />NO, (¿Tú eres loco Ramón?)</label
+					><br />
+					<label>
+					  <input
+						name="user-recommend"
+						value="si"
+						type="radio"
+						class="input-radio"
+					  />SI, (Definitivamente)</label
+					><br />
+					<label>
+					  <input
+						name="user-recommend"
+						value="tal_vez"
+						type="radio"
+						class="input-radio"
+					  />Tal vez</label
+					><br />
+					<label
+					  ><input
+						name="user-recommend"
+						value="quizas"
+						type="radio"
+						class="input-radio"
+					  />Quizás</label
+					><br />
+					<label
+					><input
+					  name="user-recommend"
+					  value="es_posible"
+				  	type="radio"
+				 	 class="input-radio"
+					/>Es posible</label
+					><br />
+				 	<label
+					  ><input
+					   name="user-recommend"
+					   value="si_diosito_quiere"
+					   type="radio"
+					   class="input-radio"
+			 	 	 />Si Diosito quiere</label
+					><br />
+			 </div>
+			 <div class="form-group">
+				<p><b>¿Tiene dudas o necesitas alguna ayuda?</b></p>
+				<textarea
+				  id="comments"
+				  class="input-textarea"
+				  name="comment"
+				  placeholder="Escribe tu comentario"
+				></textarea>
+			 </div>
+			 <div>
+				<p>
+					<b>¿Que te gustaría hacer en Venezuela?</b>
+					<span class="clue">(Marcar todas las que te interesen)</span>
+				  </p>
+			
+				  <label
+					><input
+					  name="prefer"
+					  value="visitar_paisajes"
+					  type="checkbox"
+					  class="input-checkbox"
+					/>Visitar sus paisajes</label
+				  ><br />
+				  <label>
+					<input
+					  name="prefer"
+					  value="conocer_gente"
+					  type="checkbox"
+					  class="input-checkbox"
+					/>Conocer su gente</label
+				  ><br />
+				  <label
+					><input
+					  name="prefer"
+					  value="como_viven"
+					  type="checkbox"
+					  class="input-checkbox"
+					/>Ver como viven</label
+				  ><br />
+				  <label
+					><input
+					  name="prefer"
+					  value="investigacion_cientifica"
+					  type="checkbox"
+					  class="input-checkbox"
+					/>Investigación Científica</label
+				  ><br />
+			 </div>
+			 <div class="form-group">
+				<p>
+					<b>¿Cómo te enteraste de que existe Venezuela?</b>
+				</p>
+				<select id="most-like" name="mostLike" class="form-control" required>
+				  <option disabled selected value>Seleccione una opción</option>
+				  <option value="noticias">Noticias</option>
+				  <option value="historia_americana">Historia Americana</option>
+				  <option value="familiares_amigos">Familiares y Amigos</option>
+				  <option value="redes_sociales">Redes Sociales</option>
+				</select>
+			  </div>
+			  <div class="form-group">
+				<button type="submit" id="submit" class="submit-button">
+					Enviar
+				</button>
+			 </div>
+			</form>
+		</main>
+		<aside class="sidebar">
+			<div class="img-div">
+				<img class="centrar" src="https://c4.wallpaperflare.com/wallpaper/387/57/232/venezuela-flag-wallpaper-preview.jpg"
+				alt="Bandera oficial de Venezuela">
+				<figcaption id="img-caption" class="img-caption">
+					<h1><b><i>Venezuela</i></b></h1><br>
+					<p class="texto_descriptivo">Es un país soberano ubicado en américa del sur, que nacío en 1830. Su capital es la ciudad de Caracas. Venezuela está dividida en 4 grandes regiones naturales: la Región Caribeña, la Región Andina, la Región de los Llanos y la Región Amazónica.</p>
+				</figcaption>
+			</div>
+		</aside>
+		<footer class="footer">
+			<p>Moisés Rengel - 2022. SC in Github: <a target="_blank" id="survey-form" href="https://github.com/moisesfra/proyects-freecodecamp/tree/main/1_responsive_web_design(version_2020_1.0)/2_proyect_%23_build_a_survey_form">moisesfra</a></p>
+		</footer>
+	</div>
+</body>
 </html>
+
