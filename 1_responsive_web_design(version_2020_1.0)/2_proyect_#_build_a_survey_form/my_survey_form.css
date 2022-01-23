@@ -107,13 +107,34 @@
 
 }
 
-
 .contenedor .footer {
-	background: rgba(0, 4, 224, 0.733);
+	background: rgba(5, 8, 240, 0.911);
 	color: #fff;
 	grid-area: footer;
 	text-align: center;
 }
+
+.contenedor footer a:link {
+	background: rgb(229, 255, 0);
+	color: rgb(0, 0, 0);
+	border-radius: 3px;
+}
+.contenedor footer a:visited {
+	background: rgb(229, 255, 0);
+	color: rgb(0, 0, 0);
+	border-radius: 3px;
+}
+.contenedor footer a:active {
+	background: rgb(229, 255, 0);
+	color: rgb(0, 0, 0);
+	border-radius: 3px;
+}
+.contenedor footer a:hover {
+	background: rgba(255, 115, 0, 0.932);
+	color: rgb(0, 0, 0);
+	border-radius: 3px;
+}
+
 
 .img-div {
 	top: 0px;
